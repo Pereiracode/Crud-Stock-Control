@@ -10,6 +10,9 @@
 <body>
 
 <div class="container" style="margin-top:40px;">
+    <div class="container" style="text-align:right;">
+        <a href="index.php" class="btn btn-primary btn-sm">Voltar</a>
+    </div>
 <h3>Lista de Produtos</h3>
 <br/>
 <table class="table">
