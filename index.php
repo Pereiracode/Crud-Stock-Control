@@ -28,6 +28,27 @@
       </div>
     </div>
   </div>
+
+  <div class="col-sm-6" style="margin-top:20px">
+    <div class="card">
+      <div class="card-body">
+        <h5 class="card-title">Adicionar Categoria</h5>
+        <p class="card-text">Opção para adicionar categorias de produtos.</p>
+        <a href="adicionar_categoria.php" class="btn btn-primary">Cadastrar Categoria</a>
+      </div>
+    </div>
+  </div>
+  <div class="col-sm-6" style="margin-top:20px">
+    <div class="card">
+      <div class="card-body">
+        <h5 class="card-title">Adicionar Fornecedor</h5>
+        <p class="card-text">Opção para adicionar fornecedores.</p>
+        <a href="#" class="btn btn-primary">Cadastrar Fornecedores</a>
+      </div>
+    </div>
+  </div>
+
+
 </div>
 </div>
 
