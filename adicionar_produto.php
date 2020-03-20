@@ -70,8 +70,8 @@
                     $buscar2 = mysqli_query($conexao, $sql2);
 
                     while($array2 = mysqli_fetch_array($buscar2)){
-                        $id_forn = $array['id_forn'];
-                        $nome_forn = $array['nome_forn'];
+                        $id_forn = $array2['id_forn'];
+                        $nome_forn = $array2['nome_forn'];
                         ?>
 
                     <option><?php echo $nome_forn ?></option>                

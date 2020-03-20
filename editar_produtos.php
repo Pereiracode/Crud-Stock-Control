@@ -61,10 +61,20 @@ $id = $_GET['id'];
                 <div class="form-group">
                     <label>Categoria</label>
                     <select class="form-control" name="categoria">
-                    <option>Periféricos</option>
-                    <option>Hardware</option>
-                    <option>Software</option>
-                    <option>Celulares</option>
+                    <?php
+                    include 'conexao.php';
+
+                    $sql = "select * from categoria order by nome_categoria ASC";
+                    $buscar = mysqli_query($conexao, $sql);
+
+                    while($array = mysqli_fetch_array($buscar)){
+                        $id_categoria = $array['id_categoria'];
+                        $nome_categoria = $array['nome_categoria'];
+                        ?>
+
+                    <option><?php echo $nome_categoria ?></option>                
+                        
+                <?php } ?>
                     
                     </select>
                 </div>
@@ -75,9 +85,20 @@ $id = $_GET['id'];
                 <div class="form-group">
                     <label>Fornecedor</label>
                     <select class="form-control" name="fornecedor">
-                    <option>Fornecedor A</option>
-                    <option>Fornecedor B</option>
-                    <option>Fornecedor C</option>                    
+                    <?php
+                    include 'conexao.php';
+
+                    $sql2 = "select * from fornecedor order by nome_forn ASC";
+                    $buscar2 = mysqli_query($conexao, $sql2);
+
+                    while($array2 = mysqli_fetch_array($buscar2)){
+                        $id_forn = $array2['id_forn'];
+                        $nome_forn = $array2['nome_forn'];
+                        ?>
+
+                    <option><?php echo $nome_forn ?></option>                
+                        
+                <?php } ?>
                     </select>
                 </div>
                 <div style="text-align : right;">

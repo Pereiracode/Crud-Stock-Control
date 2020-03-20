@@ -4,6 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+    <link rel="stylesheet" href="css/style.css">
     <title>Menu</title>
 </head>
 <body>
@@ -24,7 +25,7 @@
       <div class="card-body">
         <h5 class="card-title">Lista de Produtos</h5>
         <p class="card-text">Visualizar, editar e excluir produtos.</p>
-        <a href="listar_produtos.php" class="btn btn-primary">Produtos</a>
+        <a href="listar_produtos.php" class="btn btn-primary">Listar</a>
       </div>
     </div>
   </div>
@@ -41,13 +42,31 @@
   <div class="col-sm-6" style="margin-top:20px">
     <div class="card">
       <div class="card-body">
+        <h5 class="card-title">Lista de Categorias</h5>
+        <p class="card-text">Visualizar, editar e excluir categorias.</p>
+        <a href="listar_categoria.php" class="btn btn-primary">Listar</a>
+      </div>
+    </div>
+  </div>
+
+  <div class="col-sm-6" style="margin-top:20px">
+    <div class="card">
+      <div class="card-body">
         <h5 class="card-title">Adicionar Fornecedor</h5>
         <p class="card-text">Opção para adicionar fornecedores.</p>
         <a href="adicionar_fornecedor.php" class="btn btn-primary">Cadastrar Fornecedores</a>
       </div>
     </div>
   </div>
-
+  <div class="col-sm-6" style="margin-top:20px">
+    <div class="card">
+      <div class="card-body">
+        <h5 class="card-title">Lista de Fornecedores</h5>
+        <p class="card-text">Visualizar, editar e excluir fornecedores.</p>
+        <a href="listar_fornecedor.php" class="btn btn-primary">Listar</a>
+      </div>
+    </div>
+  </div>
 
 </div>
 </div>
