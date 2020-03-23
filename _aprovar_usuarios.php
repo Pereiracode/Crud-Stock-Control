@@ -22,7 +22,7 @@ if($nivel == 3){
     echo "Conferente Aprovado";
 }
 
-
+header("Location: aprovar_usuarios.php"); //redireciona para a página de aprovação
 
 
 

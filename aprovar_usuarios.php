@@ -49,7 +49,7 @@
         <td><a class="btn btn-success btn-sm" style="color:#fff;" href="_aprovar_usuarios.php?id=<?php echo $id_usuario?> &nivel=1" role="button"><i class="fas fa-check"></i>&nbsp;Administrador</a>
         <a class="btn btn-warning btn-sm" style="color:#fff;" href="_aprovar_usuarios.php?id=<?php echo $id_usuario?> &nivel=2" role="button"><i class="fas fa-check"></i>&nbsp;Funcionário</a>
         <a class="btn btn-dark btn-sm" style="color:#fff;" href="_aprovar_usuarios.php?id=<?php echo $id_usuario?> &nivel=3" role="button"><i class="fas fa-check"></i>&nbsp;Conferente</a>
-        <a class="btn btn-danger btn-sm" style="color:#fff;" href="deletar_usuarios.php?id=<?php echo $id_usuario?> &nivel=<?php echo $nivel ?>" role="button"><i class="far fa-trash-alt"></i>&nbsp;Excluir</a></td>
+        <a class="btn btn-danger btn-sm" style="color:#fff;" href="deletar_usuarios.php?id=<?php echo $id_usuario?>" role="button"><i class="far fa-trash-alt"></i>&nbsp;Excluir</a></td>
         <?php } ?>
 
     </tr> 

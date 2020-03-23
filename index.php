@@ -23,7 +23,7 @@
         <img src="img/cadeado.png" width="125px" heigth="125px" alt="Logo_login">
     </center>
 
-    <form action="" method="post">
+    <form action="index1.php" method="post">
         <div class="form-group">
             <label >Usuário:</label>
             <input type="text" name="usuario" class="form-control" placeholder="Usuário" autocomplete="off" required>
@@ -32,11 +32,12 @@
             <label >Senha:</label>
             <input type="password" name="senha" class="form-control" placeholder="Senha" autocomplete="off" required>
         </div>
-    </form>
-
-    <div style="text-align:right">
+        <div style="text-align:right">
         <button type="submit" class="btn btn-sm btn-success">Entrar</button>
     </div>
+    </form>
+
+    
 
     </div>
 </div>
