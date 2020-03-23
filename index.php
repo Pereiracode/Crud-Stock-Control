@@ -41,6 +41,11 @@
     </div>
 </div>
 
+<div style="margin-top:10px">
+    <center>
+            <small>Você não possui cadastro? <a href="cadastro_usuario_externo.php">Clique aqui</a></small>
+    </center>
+</div>
 
 
 
