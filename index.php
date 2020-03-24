@@ -16,7 +16,11 @@
     </style>
 </head>
 <body>
+<?php
+    session_start();
+    session_destroy();
 
+?>
 <div class="container" id="tamanho" style="width:350px; margin-top:100px;border-radius:15px; border:2px solid #f3f3f3">
     <div style="padding:15px">
     <center>

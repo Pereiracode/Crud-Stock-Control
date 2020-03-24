@@ -15,7 +15,7 @@
 <body>
     <div class="container" style="margin-top:40px; width:500px;">
         <div class="container" style="text-align:right;">
-            <a href="index.php" class="btn btn-primary btn-sm">Voltar</a>
+            <a href="menu.php" class="btn btn-primary btn-sm">Voltar</a>
         </div>
         <h4>Cadastro de Categoria</h4>
         <form action="_inserir_categoria.php" method="post">

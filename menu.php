@@ -3,6 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://kit.fontawesome.com/362ff39427.js" crossorigin="anonymous"></script>
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
     <link rel="stylesheet" href="css/style.css">
     <title>Menu</title>
@@ -25,8 +26,32 @@
   $nivel = $array['nivel_usuario'];
 ?>
 
-
+<div class="container" style="width:500px; height:40px;text-align:center;color:white;background-color:green">
+<?php
+if($nivel == 1){
+  $user = "Administrador";
+}
+if($nivel == 2){
+  $user = "Funcionário";
+}
+if($nivel == 3){
+  $user = "Conferente";
+}
+?>
+  <h5>Usuário Logado: <?php echo $user ?></h5>
+</div>
 <div class="container" style="margin-top:100px">
+
+
+  <div class="container" style="text-align : right">
+    <form action="index.php" method="post">
+      <button class="btn btn-sm btn-danger" type="submit"><i class="fas fa-arrow-right"></i>&nbsp;&nbsp;<b>Sair</b></button>
+    </form>
+  </div>
+  
+<div class="container" style="text-align:center; margin-bottom:50px">
+  <h2>Menu de opções</h2>
+</div>
 <div class="row">
   <?php
     if(($nivel == 1) || ($nivel == 2)){
@@ -48,12 +73,17 @@
     <div class="card">
       <div class="card-body">
         <h5 class="card-title">Lista de Produtos</h5>
-        <p class="card-text">Visualizar, editar e excluir produtos.</p>
+        <p class="card-text">Visualize os produtos existentes em estoque !</p>
         <a href="listar_produtos.php" class="btn btn-primary">Listar</a>
       </div>
     </div>
   </div>
 
+  <?php
+    if(($nivel == 1) || ($nivel == 2)){
+
+    
+  ?>
   <div class="col-sm-6" style="margin-top:20px">
     <div class="card">
       <div class="card-body">
@@ -63,15 +93,23 @@
       </div>
     </div>
   </div>
+    <?php } ?>
+
   <div class="col-sm-6" style="margin-top:20px">
     <div class="card">
       <div class="card-body">
         <h5 class="card-title">Lista de Categorias</h5>
-        <p class="card-text">Visualizar, editar e excluir categorias.</p>
+        <p class="card-text">Visualize as categorias de produtos !</p>
         <a href="listar_categoria.php" class="btn btn-primary">Listar</a>
       </div>
     </div>
   </div>
+
+  <?php
+    if(($nivel == 1) || ($nivel == 2)){
+
+    
+  ?>
 
   <div class="col-sm-6" style="margin-top:20px">
     <div class="card">
@@ -82,16 +120,24 @@
       </div>
     </div>
   </div>
+
+    <?php } ?>
+
   <div class="col-sm-6" style="margin-top:20px">
     <div class="card">
       <div class="card-body">
         <h5 class="card-title">Lista de Fornecedores</h5>
-        <p class="card-text">Visualizar, editar e excluir fornecedores.</p>
+        <p class="card-text">Visualize os fornecedores de produtos !</p>
         <a href="listar_fornecedor.php" class="btn btn-primary">Listar</a>
       </div>
     </div>
   </div>
 
+  <?php
+
+      if($nivel == 1){
+
+  ?>
   <div class="col-sm-6" style="margin-top:20px">
     <div class="card">
       <div class="card-body">
@@ -101,6 +147,7 @@
       </div>
     </div>
   </div>
+
   <div class="col-sm-6" style="margin-top:20px">
     <div class="card">
       <div class="card-body">
@@ -110,6 +157,8 @@
       </div>
     </div>
   </div>
+  <?php } ?>
+
 </div>
 </div>
 
