@@ -45,7 +45,7 @@ if($nivel == 3){
 
   <div class="container" style="text-align : right">
     <form action="index.php" method="post">
-      <button class="btn btn-sm btn-danger" type="submit"><i class="fas fa-arrow-right"></i>&nbsp;&nbsp;<b>Sair</b></button>
+      <button class="btn btn-sm btn-danger" type="submit" ><i class="fas fa-arrow-right"></i>&nbsp;&nbsp;<b>Sair</b></button>
     </form>
   </div>
   
@@ -74,7 +74,7 @@ if($nivel == 3){
       <div class="card-body">
         <h5 class="card-title">Lista de Produtos</h5>
         <p class="card-text">Visualize os produtos existentes em estoque !</p>
-        <a href="listar_produtos.php" class="btn btn-primary">Listar</a>
+        <a href="listar_produtos.php" class="btn btn-primary" >Listar</a>
       </div>
     </div>
   </div>
@@ -128,7 +128,7 @@ if($nivel == 3){
       <div class="card-body">
         <h5 class="card-title">Lista de Fornecedores</h5>
         <p class="card-text">Visualize os fornecedores de produtos !</p>
-        <a href="listar_fornecedor.php" class="btn btn-primary">Listar</a>
+        <a href="listar_fornecedor.php" class="btn btn-primary" >Listar</a>
       </div>
     </div>
   </div>

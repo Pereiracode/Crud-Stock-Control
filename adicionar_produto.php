@@ -58,7 +58,7 @@
                 </div>
                 <div class="form-group">
                     <label>Quantidade do Produto</label>
-                    <input type="number" class="form-control" name="quantidade" placeholder="Insira a quantidade do produto"  required>
+                    <input type="number" maxlength="10" class="form-control" name="quantidade" placeholder="Insira a quantidade do produto"  required>
                 </div>
                 <div class="form-group">
                     <label>Fornecedor</label>
